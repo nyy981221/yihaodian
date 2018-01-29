@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+header {
+  border-bottom: 1px solid black;
+  height: 100px; }
+  header .header_left {
+    float: left;
+    margin-left: 30px;
+    line-height: 100px; }
+  header .header_right {
+    float: right;
+    margin-left: 30px;
+    margin-top: 20px; }
+    header .header_right ul li {
+      float: left;
+      margin-left: 30px; }
+      header .header_right ul li a {
+        text-decoration: none; }
+footer {
+	clear: both;
+  margin-top: 100px;
+  font-size: 0.6rem;
+  text-align: center; }

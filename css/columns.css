@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+content {
+  line-height: 50px;
+  clear: both;
+  float: left;
+  border-bottom: 5px solid #ff3c3c;
+  margin-left: 100px; }
+  content .content_div1 {
+    width: 200px;
+    height: 50px;
+    line-height: 40px;
+    background: #ff3c3c;
+    color: white;
+    text-align: center;
+    float: left; }
+  content .content_div2 {
+    float: left; }
+    content .content_div2 ul {
+      float: left; }
+      content .content_div2 ul li {
+        float: left;
+        margin-left: 20px; }
+  content .content_div3 {
+    float: left;
+    margin-left: 300px; }
+
+#div1 {
+  clear: both;
+  font-size: 0.5rem;
+  margin-left: 100px;
+  line-height: 50px; }
+  #div1 #p1 {
+    color: red; }
+
+main .main_div1 {
+  float: left; }
+  main .main_div1 #img1 {
+    width: 100%; }
+     main .main_div1 ul{
+     	margin-left: 100px;
+     	margin-top: 320px;
+     }
+  main .main_div1 .main_div1_ul ul li {
+    float: left;
+    margin-left: 5px; }
+    main .main_div1 .main_div1_ul ul li img {
+      width: 80%; }
+main .main_div2 {
+  float: left; }
+  main .main_div2 h3 {
+    line-height: 40px; }
+  main .main_div2 .p1 {
+    color: gainsboro;
+    font-size: 0.8rem; }
+  main .main_div2 .sp1 {
+    color: red;
+    font-size: 1.4rem;
+    line-height: 30px; }
+  main .main_div2 .sp2 {
+    line-height: 30px;
+    font-size: 0.9rem; }
+  main .main_div2 .btn {
+    width: 60px;
+    height: 30px;
+    background: white;
+    border: 1px solid gainsboro;
+    margin-left: 30px;
+    color: gainsboro; }
+  main .main_div2 button {
+    margin-top: 20px; }
+  main .main_div2 .main_div2_center .btn1 {
+    float: left;
+    width: 50px;
+    height: 30px;
+    border: 1px solid gainsboro;
+    background: white; }
+  main .main_div2 .main_div2_center .btn2 {
+    margin-left: 200px;
+    width: 70px;
+    height: 30px;
+    border: 1px solid gainsboro;
+    background: white; }
+  main .main_div2 .main_div2_bottom {
+    line-height: 200px; }
+    main .main_div2 .main_div2_bottom .num {
+      width: 100px;
+      height: 50px;
+      font-size: 30px; }
+    main .main_div2 .main_div2_bottom .btn3 {
+      width: 200px;
+      height: 54px;
+      background: orangered;
+      color: white;
+      text-align: center;
+      border: 1px solid; }
+main .main_div3 {
+  float: right;
+  margin-right: 100px; }
+  main .main_div3 img {
+    float: right; }
+  main .main_div3 button {
+    width: 200px;
+    height: 50px;
+    background: gainsboro;
+    border: none; }
+
+layout {
+  clear: both;
+  float: left;
+  width: 80%;
+  margin-left: 10%; }
+  layout .layout_top {
+    background: #f6f6f6;
+    line-height: 30px;
+    width: 100%; }
+    layout .layout_top p {
+      margin-left: 10px;
+      font-size: 0.8rem; }
+  layout .layout_left {
+    float: left; }
+    layout .layout_left ul li {
+      margin-top: 10px;
+      width: 200px;
+      text-align: center;
+      border: 1px solid gainsboro; }
+  layout .layout_right_top {
+    float: left;
+    margin-top: -25px; }
+    layout .layout_right_top p {
+      line-height: 30px; }
+    layout .layout_right_top #ppp {
+      margin-top: -6px;
+      width: 100px;
+      border-top: 1px solid orangered; }
+    layout .layout_right_top ul {
+      margin-top: 40px;
+      border: 1px solid gainsboro;
+      height: 300px; }
+      layout .layout_right_top ul li {
+        float: left;
+        margin-left: 65px;
+        line-height: 100px; }
+        layout .layout_right_top ul li span {
+          color: gainsboro; }
+        layout .layout_right_top ul li span {
+          margin-left: 100px; }
+      layout .layout_right_top ul .li4 p {
+        color: orangered;
+        margin-top: 50px;
+        margin-left: 10px; }
+      layout .layout_right_top ul .li4 input {
+        width: 50px;
+        height: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px; }
+      layout .layout_right_top ul .li4 button {
+        background: orangered;
+        text-align: center;
+        color: white;
+        width: 100px;
+        height: 30px;
+        border: none; }
+  layout .layout_right_center .layout_right_center_ul1 {
+    float: left; }
+    layout .layout_right_center .layout_right_center_ul1 ul {
+      background: gainsboro;
+      height: 50px;
+      width: 875px; }
+      layout .layout_right_center .layout_right_center_ul1 ul li {
+        float: left;
+        line-height: 50px;
+        width: 130px;
+        text-align: center; }
+      layout .layout_right_center .layout_right_center_ul1 ul li:hover {
+        background: white;
+        border-top: 1px solid orangered; }
+  layout .layout_right_center .layout_right_center_ul2 {
+    float: left;
+    border-bottom: 1px solid orangered;
+    height: 200px; }
+    layout .layout_right_center .layout_right_center_ul2 ul {
+      clear: both;
+      float: left; }
+      layout .layout_right_center .layout_right_center_ul2 ul li {
+        float: left;
+        margin-left: 70px;
+        color: gray;
+        line-height: 50px;
+        height: 50px; }
+  layout .layout_right_bottom {
+    float: left;
+    clear: both;
+    margin-left: 220px;
+    margin-top: -500px; }
+    layout .layout_right_bottom ul {
+      clear: both;
+      float: left; }
+
+/*# sourceMappingURL=columns.css.map */

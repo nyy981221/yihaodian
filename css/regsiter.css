@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+header {
+  border-bottom: 1px solid black;
+  height: 100px; }
+  header .header_left {
+    float: left;
+    margin-left: 30px;
+    line-height: 100px; }
+  header .header_right {
+    float: right;
+    margin-left: 30px;
+    margin-top: 20px; }
+    header .header_right ul li {
+      float: left;
+      margin-left: 30px; }
+      header .header_right ul li a {
+        text-decoration: none; }
+
+main {
+  clear: both; }
+  main .main_div1 {
+    text-align: center; }
+  main .main_div2 {
+    margin-left: 530px; }
+    main .main_div2 .txt {
+      width: 300px;
+      height: 50px; }
+    main .main_div2 #text {
+      width: 200px;
+      height: 50px; }
+    main .main_div2 input {
+      margin-top: 10px; }
+    main .main_div2 #btn1 {
+      width: 80px;
+      height: 50px;
+      background: #57565f;
+      color: white;
+      border: none;
+      margin-left: 20px; }
+    main .main_div2 #p1 {
+      margin-top: 30px; }
+      main .main_div2 #p1 a {
+        text-decoration: none; }
+    main .main_div2 #btn2 {
+      width: 300px;
+      height: 50px;
+      background: #ff3c3c;
+      color: white;
+      border: none; }
+span{
+	color: red;
+	font-size: 0.6rem;
+}
+footer {
+  margin-top: 50px;
+  font-size: 0.6rem;
+  text-align: center; }
+
+/*# sourceMappingURL=regsiter.css.map */

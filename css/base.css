@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+header{
+	width: 100%;
+}
+header .header_top {
+	width: 1349px;
+  font-size: 0.8rem;
+  height: 38px;
+  line-height: 38px;
+  background: #f4f4f4; }
+  header .header_top .header_top_left {
+    float: left;
+    margin-left: 38px; }
+  header .header_top .header_top_right {
+    float: right;
+    margin-right: 38px; }
+    header .header_top .header_top_right .header_top_right_ul li {
+      float: left;
+      margin: 3px; }
+      header .header_top .header_top_right .header_top_right_ul li a {
+        text-decoration: none;
+        color: black; }
+header .header_bottom {
+  width: 1366px;
+  margin-top: 40px; }
+  header .header_bottom .header_bottom_logo {
+    float: left;
+    margin-left: 48px; }
+  header .header_bottom .header_bottom_center {
+    float: left;
+    margin-left: 100px;
+    margin-top: 20px; }
+    header .header_bottom .header_bottom_center input {
+      width: 400px;
+      height: 40px;
+      border: 1px solid red; }
+    header .header_bottom .header_bottom_center button {
+      width: 90px;
+      height: 40px;
+      border: none;
+      background: red;
+      margin-left: -5px; }
+    header .header_bottom .header_bottom_center ul {
+      font-size: 0.5rem; }
+      header .header_bottom .header_bottom_center ul li {
+        float: left;
+        margin: 3px;
+        color: gainsboro; }
+  header .header_bottom .header_bottom_right {
+    float: left;
+    width: 120px;
+    height: 40px;
+    background: #f6f6f6;
+    margin-left: 200px;
+    margin-top: 20px;
+    line-height: 40px;
+    display: flex;
+    align-items: center; }
+    header .header_bottom .header_bottom_right button {
+      background: #f6f6f6;
+      margin: 0 auto;
+      border: none; }
+    header .header_bottom .header_bottom_right img {
+      margin-left: 10px; }
+
+footer {
+  clear: both;
+  height: 600px;
+  float: left;
+  margin-top: 66px; }
+  footer .footer_top {
+    padding-left: 200px;
+    padding-right: 300px; }
+    footer .footer_top ul{
+    	float: left;
+    	width: 800px;
+    }
+    footer .footer_top ul li {
+      float: left;
+      text-align: center;
+      margin-left: 100px;
+      font-size: 0.7rem; }
+      footer .footer_top ul li img {
+        transition: all 3s;
+        width: 75px;
+        height: 70px; }
+      footer .footer_top ul li img:hover {
+        transform: rotate(360deg) scale(1.2); }
+  footer .footer_center .footer_center_li {
+    float: left;
+    margin-left: 100px;
+    clear: both;
+    padding-top: 60px; }
+    footer .footer_center .footer_center_li dl {
+      float: left;
+      margin-left: 80px;
+      line-height: 55px; }
+      footer .footer_center .footer_center_li dl dd {
+        line-height: 30px;
+        font-size: 0.6rem; }
+  footer .footer_center_img {
+    height: 200px;
+    margin-left: 100px;
+    margin-top: 80px;
+    float: left; }
+    footer .footer_center_img .footer_center_img_div2 {
+      margin-left: 140px;
+      margin-top: -135px;
+      line-height: 40px; }
+  footer hr {
+    clear: both;
+    margin-top: 50px;
+    width: 80%;
+    margin-left: 10%; }
+  footer .footer_bottom ul {
+    margin-left: 220px; }
+    footer .footer_bottom ul li {
+      float: left;
+      border: 1px solid gainsboro;
+      border-radius: 100px;
+      margin-left: 30px;
+      text-align: center; }
+
+/*# sourceMappingURL=base.css.map */

@@ -1,0 +1,270 @@
+.ulOne {
+  clear: both;
+  float: left;
+  width: 800px;
+  margin-left: 300px;
+  line-height: 40px; }
+  .ulOne li {
+    float: left;
+    margin-left: 25px; }
+
+content {
+	width: 1200px;
+  float: left;
+  clear: both;
+  margin-left: 80px;
+  margin-top: 40px;
+  border-top: 2px solid orangered; }
+  content .content_one {
+    float: left;
+    margin-top: -40px; }
+    content .content_one dl {
+      width: 200px;
+      font-size: 0.8rem;
+      background: #b01d1d;
+      line-height: 40px;
+      color: white; }
+      content .content_one dl dd {
+        margin-left: 25px; }
+      content .content_one dl dt {
+        background: red;
+        text-align: center; }
+  content .content_two {
+    float: left;
+    margin-left: 30px; }
+    content .content_two img {
+      width: 740px;
+      height: 400px; }
+  content .content_three {
+    margin-left: 20px;
+    margin-top: 20px;
+    float: left; }
+    content .content_three .content_three_three {
+      border: 1px solid black;
+      border-bottom: none; }
+    content .content_three .content_three_four {
+      border: 1px solid black; }
+      content .content_three .content_three_four{
+      	height: 100px;
+      }
+      content .content_three .content_three_four li {
+      	
+        font-size: 0.7rem; }
+    content .content_three .content_three_five {
+      border: 1px solid black;
+      line-height: 30px; }
+    content .content_three .content_three_six {
+      border: 1px solid black;
+      line-height: 40px; }
+
+.content_three_one {
+  width: 300px;
+  top: 50px;
+  line-height: 50px;
+  margin-left: 200px; }
+  .content_three_one span {
+    margin-left: 100px; }
+  .content_three_one img {
+    margin-top: 15px; }
+
+/*#main .Louti {
+  clear: both; }
+  #main .Louti .main_div1 {
+    float: left;
+    margin-left: 0px; }
+    #main .Louti .main_div1 .main_div11 {
+      float: right; }
+      #main .Louti .main_div1 .main_div11 ul {
+        float: left;
+        border: 1px solid gainsboro;
+        clear: both;
+        margin-left: 20px; }
+        #main .Louti .main_div1 .main_div11 ul li {
+          float: left;
+          margin-right: 40px;
+          text-align: center;
+          border-left: 1px solid gainsboro;
+          width: 200px; }
+ #main .Louti .main_div2 img {
+    /*margin-left: 80px;*/
+    /*margin-top: 20px; }
+  #main .Louti.main_div3 .main_div3_top {
+    height: 50px; }
+    #main .Louti .main_div3 .main_div3_top .main_div3_top_left {
+      /*margin-left: 80px;*/
+     /* float: left;
+      line-height: 30px; }
+      #main .Louti .main_div3 .main_div3_top .main_div3_top_left img {
+        /*float: left;*/
+       /*clear: both; }
+      #main .Louti .main_div3 .main_div3_top .main_div3_top_left h3 {
+        float: left;
+        margin-top: 10px; }
+    #main .Louti .main_div3 .main_div3_top .main_div3_top_right {
+      float: right;
+      margin-right: 80px;
+      line-height: 60px; }
+      #main .Louti .main_div3 .main_div3_top .main_div3_top_right ul {
+        float: left; }
+        #main .Louti .main_div3 .main_div3_top .main_div3_top_right ul li {
+          float: left;
+          margin-left: 20px;
+          font-size: 0.8rem;
+          color: gainsboro; }
+  #main .Louti .main_div3 .main_div3_bottom {
+    border: 1px solid orangered;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin-left: 80px;
+    margin-right: 80px; }
+    #main .Louti .main_div3 .main_div3_bottom .main_div3_bottom_left {
+      height: 500px; 
+      }
+      #main .Louti .main_div3 .main_div3_bottom .main_div3_bottom_left .main_div3_bottom_left_div_one {
+        width: 210px;
+       clear: both;
+        height: 180px;
+        margin-top: -10px;
+        background: #e4f7ec;
+        font-size: 0.8rem; }
+        #main .Louti .main_div3 .main_div3_bottom .main_div3_bottom_left .main_div3_bottom_left_div_one .main_div3_bottom_left_div_one1 {
+          clear: both; }
+          #main .Louti .main_div3 .main_div3_bottom .main_div3_bottom_left .main_div3_bottom_left_div_one .main_div3_bottom_left_div_one1 ul {
+            width: 210px; }
+            #main .Louti .main_div3 .main_div3_bottom .main_div3_bottom_left .main_div3_bottom_left_div_one .main_div3_bottom_left_div_one1 ul li {
+              float: left;
+              line-height: 30px;
+              border-bottom: 1px dashed white;
+              margin-left: 30px; }
+   #main .Louti.main_div3 .main_div3_bottom .main_div3_bottom_center {
+      clear: both;
+      float: left; }
+     #main .Louti .main_div3 .main_div3_bottom .main_div3_bottom_center .main_div3_bottom_center_img {
+        float: left; }
+        #main .Louti .main_div3 .main_div3_bottom .main_div3_bottom_center .main_div3_bottom_center_img ul {
+          float: right;
+          margin-left: 220px;
+          margin-top: -430px; }
+          #main .Louti .main_div3 .main_div3_bottom .main_div3_bottom_center .main_div3_bottom_center_img ul li {
+            float: left;
+            margin-left: 5px;
+            text-align: center; }
+            main .main_div3 .main_div3_bottom .main_div3_bottom_center .main_div3_bottom_center_img ul li p {
+              line-height: 40px; }
+    #main .Louti .main_div3 .main_div3_bottom .main_div3_bottom_center_two {
+      clear: both;
+      float: left; }
+      #main .Louti .main_div3 .main_div3_bottom .main_div3_bottom_center_two .main_div3_bottom_center_img {
+        float: left; }
+        #main .Louti .main_div3 .main_div3_bottom .main_div3_bottom_center_two .main_div3_bottom_center_img ul {
+          float: right;
+          margin-left: 200px;
+          margin-top: -215px; }
+          #main .Louti .main_div3 .main_div3_bottom .main_div3_bottom_center_two .main_div3_bottom_center_img ul li {
+            float: left;
+            margin-left: 32px;
+            text-align: center; }
+            #main .Louti .main_div3 .main_div3_bottom .main_div3_bottom_center_two .main_div3_bottom_center_img ul li p {
+              line-height: 40px; }*/
+
+
+
+* {
+				margin: 0;
+				padding: 0;
+			}
+			#LoutiNav {
+				width: 32px;
+				position: fixed;
+				top: 150px;
+				left: 20px;
+				border: 1px solid #ddd;
+				display: none;
+			}
+			#LoutiNav ul li {
+				width: 32px;
+				height: 32px;
+				border-bottom: 1px dotted #DDDDDD;
+				list-style: none;
+				font-size: 12px;
+				color: #666;
+				/*text-align: center;*/
+				line-height: 32px;
+				position: relative;
+				cursor: pointer;
+			}
+			#LoutiNav ul li span {
+				width: 32px;
+				height: 32px;
+
+				top: 0;
+				left: 0;
+			}
+			#LoutiNav ul li span {
+				display: none;
+			}
+			#LoutiNav ul li.last {
+				background: #C00;
+				color: #fff;
+			}
+			#LoutiNav ul li.hover span {
+				background: #c00;
+				color: #fff;
+				display: block;
+			}
+			#LoutiNav ul li.hover span.active {
+				background: #c00;
+				color: #fff;
+				display: block;
+			}
+			#LoutiNav ul li span.active {
+				background: #fff;
+				color: #c00;
+				display: block;
+			}
+			#header {
+
+				/*margin: 0 auto;*/
+				margin-top: -200px;
+				margin-bottom: 20px;
+				
+			}
+			#header>img{
+					margin-left: 0px;
+				}
+			#main {
+				/*width: 1000px;*/
+				/*margin-left: 80px;*/
+			}
+			#main .Louti {
+				height: 530px;
+				width: 1200px;
+				/*font-size: 50px;*/
+				color: #fff;
+				margin-left: 80px;
+				/*font-weight: bold;*/
+/*				text-align: center;*/
+				
+			}
+			#footer {
+				width: 1200px;
+				height: 400px;
+				background: red;
+				/*margin: 0 auto;*/
+			}
+			#immm{
+				margin-top: 30px;
+			}
+/*# sourceMappingURL=index.css.map */
+#divv{
+	width: 1000px;
+	height: 440px;
+	background: red;
+	position: absolute;
+	left: 280px;
+	top: 207px;
+	display: none;
+	z-index: 999;
+}
+

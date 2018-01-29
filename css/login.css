@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+main .main_left {
+  float: left; }
+main .main_right {
+  float: left; }
+  main .main_right .main_right_top {
+    font-size: 0.7rem; }
+  main .main_right .main_right_inp1 {
+    margin-top: 1rem; }
+    main .main_right .main_right_inp1 input {
+      width: 300px;
+      height: 40px; }
+    main .main_right .main_right_inp1 img {
+      position: absolute;
+      margin-left: 10px;
+      margin-top: 2px; }
+  main .main_right .main_right_inp2 {
+    margin-top: 1rem; }
+    main .main_right .main_right_inp2 input {
+      width: 300px;
+      height: 40px; }
+    main .main_right .main_right_inp2 img {
+      position: absolute;
+      margin-left: 10px;
+      margin-top: 2px; }
+  main .main_right .main_right_inp3 {
+    font-size: 0.7rem;
+    margin-top: 1rem; }
+    main .main_right .main_right_inp3 span {
+      float: right; }
+  main .main_right .main_right_inp4 {
+    width: 300px;
+    height: 50px;
+    background: red;
+    color: white;
+    text-align: center;
+    border: none;
+    margin-top: 20px;
+    font-size: 1.2rem; }
+  main .main_right #p1 {
+    line-height: 30px;
+    font-size: 0.6rem; }
+  main .main_right .main_right_ul li {
+    float: left;
+    margin-left: 10px;
+    font-size: 0.6rem;
+    line-height: 30px; }
+
+/*# sourceMappingURL=login.css.map */

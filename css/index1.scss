@@ -1,0 +1,92 @@
+#main{
+    clear: both;
+
+    .Louti{
+        .img1{
+            margin-top: 50px;
+        }
+        .ul1{
+            margin-left: -30px;
+                width: 1200px;
+            li{
+                float: left;
+                text-align: center;                                                                                                                                                               
+                    margin-left: 11px;
+                    color: black;
+                    margin-right: 11px;
+                img{
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    margin-top: 50px;
+                }
+                p{
+                    line-height: 30px;
+                }
+            }
+        }
+        .div1{
+            height: 50px;
+            border-bottom: 1px solid orangered;
+            img{
+                float: left;
+            }
+            .sp1{
+                float: left;
+                color: orangered;
+                line-height: 40px;
+            }
+            .ul2{
+                float: right;
+                
+                li{
+                    float: left;
+                    margin-left: 15px;
+                    font-size: 10px;
+                    color: black;
+                    line-height: 50px;
+                }
+            }
+        }
+        .div2{
+            .div21{
+                float: left;
+
+                    .ul3{
+                     width: 200px;
+                        li{
+                            border-bottom: 1px dashed black;
+                            font-size: 10px;
+                            line-height: 30px;
+                    }
+                }
+                img{
+                    float: left;
+                }
+                
+            }
+            .div22{
+                color: black;
+
+                ul{
+                    float: left;
+                    li{
+                        float: left;
+                        text-align: center;
+                        line-height: 30px;
+
+                        border: 1px solid lightgray;
+                        img{
+                            margin-top: 20px;
+                            margin-left: 27.5px;
+                            margin-right: 27.5px;
+                        }
+                    }
+                }
+            }
+            .div23{
+
+            }
+            
+        }
+    }
+}

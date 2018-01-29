@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index1.css"/>
+		<link rel="stylesheet" type="text/css" href="js/swiper.min.css"/>
+		<script src="js/swiper.min.js"></script>
+		<script src="jquery-3.1.1.min.js"></script>
+		<style type="text/css">
+			
+		input.ac{
+			background: yellow;
+		}
+		#box{
+
+
+			text-align: center;
+		}
+		#box div{
+
+			display: none;
+		}
+		#shop{
+			clear: both;
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			border: 1px solid red;
+			right: 800px;
+			display: none;
+		}
+		.content {
+			background: white;
+				width: 600px;
+				margin: 0 auto;
+				font-family: "微软雅黑";
+				border: solid 1px #cecece;
+				padding: 5px;
+			}
+			
+			
+			.cartList {
+				overflow: hidden;
+			}
+			
+			.cartList ul {
+				clear: both;
+				width: 100%;
+				overflow: hidden;
+				border-bottom: 1px #c6c6c6 dashed;
+				padding-top: 6px;
+			}
+			
+			.cartList ul li img {
+				width: 60px;
+			}
+			
+			.cartList ul li {
+				font-family: "微软雅黑";
+				font-size: 12px;
+				color: #666666;
+				text-align: center;
+				line-height: 25px;
+				float: left;
+			}
+			
+			.cartList ul li input[name="price"] {
+				border: none;
+				background: transparent;
+				width: 45px;
+				text-align: center;
+			}
+			
+			.cartList ul li input[name="amount"] {
+				width: 45px;
+				text-align: center;
+				border: 1px solid #999999;
+				border-left: none;
+				border-right: none;
+				height: 21px;
+			}
+			
+			.cartList ul li input[name="minus"],
+			.cartList ul li input[name="plus"] {
+				height: 25px;
+				border: 1px #999999 solid;
+				width: 25px;
+				text-align: center;
+			}
+			
+			.cartList ul li:nth-of-type(1) {
+				width: 130px;
+			}
+			
+			.cartList ul li:nth-of-type(2) {
+				width: 100px;
+			}
+			
+			.cartList ul li:nth-of-type(3) {
+				width: 130px;
+			}
+			
+			.cartList ul li:nth-of-type(4) {
+				width: 100px;
+			}
+			
+			.cartList ul li:nth-of-type(5) {
+				width: 130px;
+			}
+			
+			.cartList ul li p {
+				cursor: pointer;
+			}
+			
+			.cartList ol {
+				float: right;
+				clear: both;
+			}
+			
+			.cartList ol li {
+				float: left;
+				width: 200px;
+			}
+			
+			.cartList ol li:nth-of-type(1) span {
+				color: #ff0000;
+			}
+			
+			.cartList ol li:nth-of-type(2) span {
+				display: inline-block;
+				float: right;
+				width: 80px;
+				height: 35px;
+				line-height: 35px;
+				font-size: 14px;
+				font-family: "微软雅黑";
+				background: #ff0000;
+				color: #ffffff;
+				text-align: center;
+				margin-top: 5px;
+				margin-right: 15px;
+				cursor: pointer;
+				font-weight: bold;
+			}
+			.content_one dd span:hover{
+				
+				margin-left: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="header_top">
+				<div class="header_top_left">
+					<p>送货至:四川</p>
+				</div>
+				<div class="header_top_right">
+					<ul class="header_top_right_ul">
+						<li><a href="#">你好！请登陆</a></li>
+						<li><a href="#" style="color: orangered;">免费注册</a></li>
+						<li>|</li>
+						<li>我的订单</li>
+						<li>|</li>
+						<li>收藏夹</li>
+						<li>客户服务</li>
+						<li>网站导航</li>
+						<li>|</li>
+						<li>关注我们：</li>
+						<li><img src="img/img1/首页完成后效果_03.png"/><img src="img/img1/首页完成后效果_02.png"/></li>
+						<li>|</li>
+						<li>手机版</li>
+						<li><img src="img/img1/首页完成后效果_15.png"/></li>
+					</ul>
+				</div>
+			</div>
+			<div class="header_bottom">
+				<div class="header_bottom_logo">
+					<img src="img/img1/商品详情页完成后效果_03.png"/>
+				</div>
+				<div class="header_bottom_center">
+					<div>
+						<input type="search" placeholder="请输入关键字"/>
+					<button>搜索</button>
+					</div>
+					
+					<ul class="header_bottom_center_ul">
+						<li>iphone4s</li>
+						<li>iphone5s</li>
+						<li>iphone6s</li>
+						<li>iphone7s</li>
+						<li>iphone8s</li>
+						<li>iphoneX</li>
+					</ul>
+				</div>
+				<div class="header_bottom_right">
+					<img src="img/img1/首页完成后效果_10.png"/>
+					<button id="btn1"><p>购物车</p></button>
+				</div>
+				<div id="shop">
+					<div class="content">
+			
+			<div class="cartList" id="cartList">
+				<ul class="ultwo">
+					<li>商品图片</li>
+					<li>单价</li>
+					<li>数量</li>
+					<li>总价</li>
+					<li>操作</li>
+				</ul>
+				<ul class="ultwo">
+					<li><img src="img/2512774753_714ca9414720c38e8029cb924fdeea49.jpg"></li>
+	
+					<li>¥<input type="text" name="price" value="21.90"></li>
+					<li><input type="button" name="minus" value="-" onclick="jian(this)"><input type="text" name="amount" value="1"><input type="button" name="plus" value="+" onclick="jia(this)"></li>
+					<li id="price0">¥21.90</li>
+					<li>
+						
+						<p class="q">删除</p>
+					</li>
+				</ul>
+				<ul>
+					<li><img src="img/2512774753_714ca9414720c38e8029cb924fdeea49.jpg"></li>
+					
+	
+					<li>¥<input type="text" name="price" value="24.00"></li>
+					<li><input type="button" name="minus" value="-" onclick="minus(1);"><input type="text" name="amount" value="1"><input type="button" name="plus" value="+" onclick="plus(1);"></li>
+					<li id="price1">¥24.00</li>
+					<li>
+						
+						<p  class="q">删除</p>
+					</li>
+				</ul>
+				<ol>
+					<li id="totalPrice">商品总计：<span></span></li>
+					<li><span>结 算</span></li>
+				</ol>
+			</div>
+		</div>
+				</div>
+
+			</div>
+		</header>
+		<ul class="ulOne">
+					<li style="color: red;"><b>首页</b></li>
+					<li style="color: red;"><b>自营超市</b></li>
+					<li><b>一号团</b></li>
+					<li><b>一号超市</b></li>
+					<li><b>女装</b></li>
+					<li><b>美妆</b></li>
+					<li><b>海外购</b></li>
+					<li><b>团购</b></li>
+					
+		</ul>
+<!--		<div class="content_three_one"><img src="img/img1/首页完成后效果_15.png"/><span>手机下单真多</span></div>-->
+		
+		<content>
+			<div class="content_one">
+				<dl id="dll">
+					<dt><span>全部商品分类</span></dt>
+					<dd><span>进口食品，生鲜</span></dd>
+					<dd><span>食品，饮料，酒</span></dd>
+					<dd><span>母婴，玩具，童装</span></dd>
+					<dd><span>家具，家庭清洁，纸品</span></dd>
+					<dd><span>美妆，个人护理，洗护</span></dd>
+					<dd><span>女装，内衣，中老年</span></dd>
+					<dd><span>鞋靴，箱包，腕表配饰</span></dd>
+					<dd><span>男装，运动</span></dd>
+					<dd><span>礼品，充值</span></dd>
+					<dd><span>手机，小家电，电脑</span></dd>
+				</dl>
+				<div id="divv" >
+					
+				</div>
+			</div>
+			
+			<div class="content_two">
+				
+				<div class="content_two_one">
+					<div id="box">
+						<a href="javascript:" style="display: none;">←</a>
+						<input type="button" value="按钮一" class="ac" style="display: none;"/>
+						<input type="button" value="按钮二"  style="display: none;"/>
+						<input type="button" value="按钮三"  style="display: none;"/>
+						<a href="javascript:" style="display: none;">→</a>
+						<div style="display: block;"><img src="img/img1/首页完成后效果_19.png"/></div>
+						<div><img src="img/2512774753_714ca9414720c38e8029cb924fdeea49.jpg"/></div>
+						<div><img src="img/img1/首页完成后效果_19.png"/></div>
+					</div>
+				</div>
+			</div>
+			<div class="content_three">
+				<div class="content_three_two">
+					<div class="content_three_three">
+						<p>特训</p>
+					</div>
+					<div class="content_three_four swiper-container">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">【特惠】:宫本武藏一折出售</li>
+							<li class="swiper-slide">【特惠】:宫本武藏一折出售</li>
+							<li class="swiper-slide">【特惠】:宫本武藏一折出售</li>
+							<li class="swiper-slide">【特惠】:宫本武藏一折出售</li>
+							<li class="swiper-slide">【特惠】:宫本武藏一折出售</li>
+							<li class="swiper-slide">【特惠】:宫本武藏一折出售</li>
+							<li class="swiper-slide">【特惠】:宫本武藏一折出售</li>
+							<li class="swiper-slide">【特惠】:宫本武藏一折出售</li>
+							<li class="swiper-slide">【特惠】:宫本武藏一折出售</li>
+							<li class="swiper-slide">【特惠】:宫本武藏一折出售</li>
+							<li class="swiper-slide">【特惠】:宫本武藏一折出售</li>
+							<li class="swiper-slide">【特惠】:宫本武藏一折出售</li>
+							<li class="swiper-slide">【特惠】:宫本武藏一折出售</li>
+							<li class="swiper-slide">【特惠】:宫本武藏一折出售</li>
+							<li class="swiper-slide">【特惠】:宫本武藏一折出售</li>
+						</ul>
+					</div>
+					<div class="content_three_five">
+						<h5>一号钱包</h5>
+					</div>
+					<div class="content_three_six">
+						<p>收益日渐增长</p>
+						<img src="img/img1/首页完成后效果_21.png"/>
+					</div>
+				</div>
+			</div>
+		</content>
+		
+				</div>
+			
+			
+			</div>
+			
+			
+			
+		</div>
+			
+		<main>
+					<div id="LoutiNav">
+			<ul>
+				<li class="hover">1F <span>服饰</span> </li>
+				<li>2F <span>美妆</span> </li>
+				<li>3F <span>手机</span> </li>
+				<li>4F <span>家电</span> </li>
+				<li class="last">Top</li>
+			</ul>
+		</div>
+
+		<!--楼层内容开始-->
+
+		<div id="header">
+			
+		</div>
+		<div id="main">
+			<div class="Louti" style="top: -200px;">
+				<ul class="ul1">
+					
+				</ul>
+				<img src="img/img1/首页完成后效果_40.png" id="immm"/>
+			</div>
+			<div class="Louti">
+				<div class="div1">
+					<img src="img/img1/首页完成后效果_43.png"/>
+					<span class="sp1"><b>进口~生鲜</b></span>
+					<ul class="ul2">
+						<li>进口咖啡</li>
+						<li>进口生鲜</li>
+						<li>进口酒水</li>
+						<li>进口饮料</li>
+					</ul>
+				</div>
+				<div class="div2">
+					<div class="div21">
+						<img src="img/img1/首页完成后效果_46.png"/>
+						<ul class="ul3">
+							<li style="color: black;">进口生鲜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美妆&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;进口生鲜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美妆</li>
+							<li style="color: black;">进口生鲜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美妆&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;进口生鲜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美妆&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;进口生鲜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+							<li style="color: black;">进口生鲜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美妆</li>
+							<li style="color: black;">进口生鲜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美妆&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;进口生鲜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美妆</li>
+						</ul>
+					</div>
+					<div class="div22">
+						<ul>
+							<li>
+								<img src="img/img1/首页完成后效果_51.png"/>
+								<p style="font-size: 10px;">新鲜美味 进口美食</p>
+								<p style="color: red;">￥ 288.00</p>
+							</li>
+							<li>
+								<img src="img/img1/首页完成后效果_51.png"/>
+								<p style="font-size: 10px;">新鲜美味 进口美食</p>
+								<p style="color: red;">￥ 288.00</p>
+							</li>
+							<li>
+								<img src="img/img1/首页完成后效果_51.png"/>
+								<p style="font-size: 10px;">新鲜美味 进口美食</p>
+								<p style="color: red;">￥ 288.00</p>
+							</li>
+							
+						</ul>
+						<ul>
+							<li>
+								<img src="img/img1/首页完成后效果_51.png"/>
+								<p style="font-size: 10px;">新鲜美味 进口美食</p>
+								<p style="color: red;">￥ 288.00</p>
+							</li>
+							<li>
+								<img src="img/img1/首页完成后效果_51.png"/>
+								<p style="font-size: 10px;">新鲜美味 进口美食</p>
+								<p style="color: red;">￥ 288.00</p>
+							</li>
+							<li>
+								<img src="img/img1/首页完成后效果_51.png"/>
+								<p style="font-size: 10px;">新鲜美味 进口美食</p>
+								<p style="color: red;">￥ 288.00</p>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="div23">
+						<img src="img/img1/首页完成后效果_48.png"/>
+						<img src="img/img1/首页完成后效果_59.png"/>
+					</div>
+				</div>
+			</div>
+			<div class="Louti" >
+				<div class="div1">
+					<img src="img/img1/首页完成后效果_43.png"/>
+					<span class="sp1"><b>进口~生鲜</b></span>
+					<ul class="ul2">
+						<li>进口咖啡</li>
+						<li>进口生鲜</li>
+						<li>进口酒水</li>
+						<li>进口饮料</li>
+					</ul>
+				</div>
+				<div class="div2">
+					<div class="div21">
+						<img src="img/img1/首页完成后效果_46.png"/>
+						<ul class="ul3">
+							<li style="color: black;">进口生鲜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美妆&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;进口生鲜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美妆</li>
+							<li style="color: black;">进口生鲜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美妆&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;进口生鲜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美妆&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;进口生鲜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+							<li style="color: black;">进口生鲜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美妆</li>
+							<li style="color: black;">进口生鲜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美妆&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;进口生鲜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美妆</li>
+						</ul>
+					</div>
+					<div class="div22">
+						<ul>
+							<li>
+								<img src="img/img1/首页完成后效果_51.png"/>
+								<p style="font-size: 10px;">新鲜美味 进口美食</p>
+								<p style="color: red;">￥ 288.00</p>
+							</li>
+							<li>
+								<img src="img/img1/首页完成后效果_51.png"/>
+								<p style="font-size: 10px;">新鲜美味 进口美食</p>
+								<p style="color: red;">￥ 288.00</p>
+							</li>
+							<li>
+								<img src="img/img1/首页完成后效果_51.png"/>
+								<p style="font-size: 10px;">新鲜美味 进口美食</p>
+								<p style="color: red;">￥ 288.00</p>
+							</li>
+							
+						</ul>
+						<ul>
+							<li>
+								<img src="img/img1/首页完成后效果_51.png"/>
+								<p style="font-size: 10px;">新鲜美味 进口美食</p>
+								<p style="color: red;">￥ 288.00</p>
+							</li>
+							<li>
+								<img src="img/img1/首页完成后效果_51.png"/>
+								<p style="font-size: 10px;">新鲜美味 进口美食</p>
+								<p style="color: red;">￥ 288.00</p>
+							</li>
+							<li>
+								<img src="img/img1/首页完成后效果_51.png"/>
+								<p style="font-size: 10px;">新鲜美味 进口美食</p>
+								<p style="color: red;">￥ 288.00</p>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="div23">
+						<img src="img/img1/首页完成后效果_48.png"/>
+						<img src="img/img1/首页完成后效果_59.png"/>
+					</div>
+				</div>
+			</div>
+			<div class="Louti">
+				<div class="div1">
+					<img src="img/img1/首页完成后效果_43.png"/>
+					<span class="sp1"><b>进口~生鲜</b></span>
+					<ul class="ul2">
+						<li>进口咖啡</li>
+						<li>进口生鲜</li>
+						<li>进口酒水</li>
+						<li>进口饮料</li>
+					</ul>
+				</div>
+				<div class="div2">
+					<div class="div21">
+						<img src="img/img1/首页完成后效果_46.png"/>
+						<ul class="ul3">
+							<li style="color: black;">进口生鲜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美妆&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;进口生鲜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美妆</li>
+							<li style="color: black;">进口生鲜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美妆&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;进口生鲜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美妆&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;进口生鲜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+							<li style="color: black;">进口生鲜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美妆</li>
+							<li style="color: black;">进口生鲜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美妆&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;进口生鲜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美妆</li>
+						</ul>
+					</div>
+					<div class="div22">
+						<ul>
+							<li>
+								<img src="img/img1/首页完成后效果_51.png"/>
+								<p style="font-size: 10px;">新鲜美味 进口美食</p>
+								<p style="color: red;">￥ 288.00</p>
+							</li>
+							<li>
+								<img src="img/img1/首页完成后效果_51.png"/>
+								<p style="font-size: 10px;">新鲜美味 进口美食</p>
+								<p style="color: red;">￥ 288.00</p>
+							</li>
+							<li>
+								<img src="img/img1/首页完成后效果_51.png"/>
+								<p style="font-size: 10px;">新鲜美味 进口美食</p>
+								<p style="color: red;">￥ 288.00</p>
+							</li>
+							
+						</ul>
+						<ul>
+							<li>
+								<img src="img/img1/首页完成后效果_51.png"/>
+								<p style="font-size: 10px;">新鲜美味 进口美食</p>
+								<p style="color: red;">￥ 288.00</p>
+							</li>
+							<li>
+								<img src="img/img1/首页完成后效果_51.png"/>
+								<p style="font-size: 10px;">新鲜美味 进口美食</p>
+								<p style="color: red;">￥ 288.00</p>
+							</li>
+							<li>
+								<img src="img/img1/首页完成后效果_51.png"/>
+								<p style="font-size: 10px;">新鲜美味 进口美食</p>
+								<p style="color: red;">￥ 288.00</p>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="div23">
+						<img src="img/img1/首页完成后效果_48.png"/>
+						<img src="img/img1/首页完成后效果_59.png"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		</main>	
+		<footer>
+			<div class="footer_top">
+				<ul>
+					<li><img src="img/img1/首页完成后效果_126.png"/><p>正品保障</p><p>正品行贷,放心贷款</p></li>
+					<li><img src="img/img1/首页完成后效果_127.png"/><p>正品保障</p><p>正品行贷,放心贷款</p></li>
+					<li><img src="img/img1/首页完成后效果_129.png"/><p>正品保障</p><p>正品行贷,放心贷款</p></li>
+					<li><img src="img/img1/首页完成后效果_132.png"/><p>正品保障</p><p>正品行贷,放心贷款</p></li>
+				</ul>
+			</div>
+			<br />
+			<div class="footer_center">
+				<div class="footer_center_li">
+					<dl>
+						<dt><b>新手上路</b></dt>
+						<dd>售后流程</dd>
+						<dd>购物流程</dd>
+						<dd>订购方式</dd>
+						<dd>隐私声明</dd>
+						<dd>推荐分享说明</dd>
+					</dl>
+					<dl>
+						<dt><b>配送与支付</b></dt>
+						<dd>货到付款区域</dd>
+						<dd>配送与支付查询</dd>
+						<dd>支付方式说明</dd>
+					</dl>
+					<dl>
+						<dt><b>会员中心</b></dt>
+						<dd>资金管理</dd>
+						<dd>我的收藏</dd>
+						<dd>我的订单</dd>
+					</dl>
+					<dl>
+						<dt><b>服务保证</b></dt>
+						<dd>退换货原则</dd>
+						<dd>售后服务保证</dd>
+						<dd>产品质量保证</dd>
+					</dl>
+					<dl>
+						<dt><b>联系我们</b></dt>
+						<dd>网站故障报告</dd>
+						<dd>购物资讯</dd>
+						<dd>投诉与建议</dd>
+					</dl>
+				</div>
+				<div class="footer_center_img">
+					<div class="footer_center_img_div1">
+						<img src="img/img1/商品详情页完成后效果_23.png"/>
+					</div>
+					<div class="footer_center_img_div2">
+						<p><img src="img/img1/商品详情页完成后效果_25.png"/>新浪微博</p>
+						<p><img src="img/img1/商品详情页完成后效果_25.png"/>新浪微博</p>
+						<span>服务热线</span>
+						<p style="color: orangered;">400-820-8830</p>
+					</div>
+					
+				</div>
+			</div>
+			
+			<hr />
+			<div class="footer_bottom">
+				<p style="text-align: center; font-size: 0.6rem; line-height: 80px;">备案/许可证编号：蜀ICP备12009302号-1-www.dingguagua.com Copyrught~1号店网上超市  2007-2016,All Rights Reserved 复制必究，Technical Support
+				: Dgg Group</p>
+				<ul>
+					<li><img src="img/img1/商品详情页完成后效果_32.png"/></li>
+					<li><img src="img/img1/商品详情页完成后效果_34.png"/></li>
+					<li><img src="img/img1/商品详情页完成后效果_36.png"/></li>
+					<li><img src="img/img1/商品详情页完成后效果_42.png"/></li>
+					<li><img src="img/img1/商品详情页完成后效果_32.png"/></li>
+					<li><img src="img/img1/商品详情页完成后效果_42.png"/></li>
+					<li><img src="img/img1/商品详情页完成后效果_36.png"/></li>
+				</ul>
+			</div>
+			
+		</footer>
+	</body>
+	<script>
+			$("#LoutiNav ul li").not(".last").hover(function() {
+				//鼠标滑上去
+				$(this).addClass("hover");
+			}, function() {
+				//鼠标移开
+				$(this).removeClass("hover");
+			});
+			 //鼠标点击
+			var mark = 1;
+			$("#LoutiNav ul li").not(".last").click(function() {
+				mark = 2; //改变标记
+				$("#LoutiNav ul li").find("span").removeClass("active");
+				$(this).find("span").addClass("active");
+				//点击左边导航 然后跳到指定的楼层
+				var $index = $(this).index(); //找到了对应的序列号
+				//alert($index);
+				var $top = $("#main .Louti").eq($index).offset().top; //获取制定Louti与浏览器上面的距离
+				//alert($top);
+				$("body,html").animate({
+					scrollTop: $top
+				}, 500, function() {
+					mark = 1;
+				}); //浏览器滚动的高度
+			});
+			 //浏览器串口滚动事件
+			$(window).scroll(function() {
+				if (mark == 1) {
+					var $t = $(this).scrollTop(); //获取滚动条滚动的高度
+					//document.title = $t;
+					if ($t > 1000) { //通过滚动条来判断
+						$("#LoutiNav").fadeIn(); //淡入 导航慢慢显示出来
+					} else {
+						$("#LoutiNav").fadeOut(); //淡出 导航慢慢消失
+					}
+					var $obj = $("#main .Louti");
+					//循环每一个Louti 然后找到最先满足条件的那个 Louti
+					$obj.each(function() {
+						var $index = $(this).index();
+						//楼层与浏览器上面的高度
+						var $height = $obj.eq($index).offset().top + $(this).height() / 2;
+						//alert($height) 
+						//document.title = $t + "--" + $height;
+						if ($t < $height) {
+							$("#LoutiNav ul li").find("span").removeClass("active")
+							$("#LoutiNav ul li").eq($index).find("span").addClass("active");
+							return false;
+						}
+					});
+				}
+			});
+			 //点击 Top按钮 跳转到浏览器顶部
+			$("#LoutiNav ul li.last").click(function() {
+				$("body,html").animate({
+					scrollTop: 0
+				}, 0, function() {
+					mark = 1;
+				});
+			});
+			
+			
+			//轮播
+		var oBox=document.getElementById("box");
+		var aBtn=oBox.getElementsByTagName("input")
+		var aDiv=oBox.getElementsByTagName("div")
+		var aA=oBox.getElementsByTagName("a")
+		var timer=null;
+		var iNow=0;
+		
+		function tab (item) {
+			for (var i = 0; i < aBtn.length; i++) {
+				aBtn[i].className='';
+				aDiv[i].style.display="none";
+			}					
+			aBtn[item].className="ac";
+			aDiv[item].style.display="block"
+		}
+		
+		
+		for (var i = 0; i < aBtn.length; i++) {
+			aBtn[i].index=i;
+			aBtn[i].onmouseover=function () {	
+					iNow=this.index;
+					console.log(iNow)
+					tab(iNow)
+			}
+			
+		}
+
+		aA[0].onclick=function () {//左箭头				
+			iNow--;
+//			if (iNow<0) {
+//				iNow=2;
+//			}
+//			(iNow<0)&&(iNow=2)
+			(iNow<0)&&(iNow=aBtn.length-1)
+			tab(iNow);			
+		}
+		aA[1].onclick=function () {//右箭头				
+			iNow++;
+			if (iNow>aBtn.length-1) {
+				iNow=0;
+			}
+			
+			
+			tab (iNow);			
+		}
+		
+		timer=setInterval(aA[0].onclick,1000);
+		
+		
+		
+//		移入移出
+		$(function(){
+			
+		var oBtn1=document.getElementById("btn1");
+		var Oshop=document.getElementById("shop");
+		var timer=null;
+		oBtn1.onmouseover=Oshop.onmouseover=function(){
+			clearInterval(timer)
+			Oshop.style.display="block"
+		}
+		oBtn1.onmouseout=Oshop.onmouseout=function(){
+					timer=setTimeout(function(){
+					Oshop.style.display="none";
+					},1000)	
+						
+		}
+		function del(id) {
+				var delNode = id.parentNode.parentNode;
+				delNode.parentNode.removeChild(delNode);
+				total();
+		}
+
+		})
+		var oSp=document.getElementById("dll");
+		var oDivv=document.getElementById("divv");
+		oSp.onmousemove=function(){
+			oDivv.style.display="block"
+		}
+		oSp.onmouseout=function(){
+			oDivv.style.display="none"
+		}
+		var mySwiper=new Swiper(".swiper-container",{
+						direction:"vertical",
+						autoplay : 1000,     
+                        speed:100,
+                        loop : true,
+                        freeMode:true,
+                        slidesPerView : 5,
+                        slidesPerGroup : 1,
+                
+		})
+		
+		
+		
+		
+		
+		//ajax渲染数据
+		$.ajax({
+			type:"get",
+			url:"http://127.0.0.1:1234",
+			async:true,
+			dataType:"json",
+			success:function(data){
+				str="";
+				for(var i=0;i<data.img.length;i++){
+					console.log(i)
+					str+="<li><img src='"+data.img[i]+"'/><p><b>"+data.p[i]+"</b></p><p>"+data.p2[i]+"</p><p>"+data.p3[i]+"</p></li>"
+					
+				}
+				$(".Louti .ul1").html(str)
+				
+			}
+		});
+		
+		
+		
+		//购物车功能
+		
+		function jia(t){
+			 t.previousElementSibling.value++;
+        	subtotal()
+		}
+		function jian(t) {
+        if (t.nextElementSibling.value>0)
+        t.nextElementSibling.value--;
+        subtotal()
+    	}
+		var q=document.getElementsByClassName('q');
+		var ul2=document.getElementsByClassName('ultwo');
+    	for(var i=0;i<ul2.length;i++){
+    	q.onclick=function(){
+    		ul2.innerHTML=""
+    	}   	
+    }
+	</script>
+</html>
